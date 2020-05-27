@@ -58,7 +58,7 @@ VS Code Enabled Extensions:
     
     CodeLLDB (Vadim Chuganov)
 
-c++
+c++ info
 
      $ c++ -v
      Using built-in specs.
@@ -79,6 +79,15 @@ c++
      Thread model: posix
      gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)
 
+     $ gcc -v
+     Using built-in specs.
+     COLLECT_GCC=gcc
+     COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+     OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+     OFFLOAD_TARGET_DEFAULT=1
+     Target: x86_64-linux-gnu
+     Thread model: posix
+     gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2) 
 
 
 
