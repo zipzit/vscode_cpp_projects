@@ -1,7 +1,7 @@
 # vscode_cpp_projects
 Run C++ Code on VS Code on Linux
 
-The goal here is to run C++ programs on a Linux box using Visual Studio Code, including the ability to debug / step through code.  These samples show a progression of making this work. 
+The goal here is to run C++ programs on a Linux box using Visual Studio Code, including the ability to debug / step through code.  These samples show a progression of making this work.    Please note, this is a work in progress... I'm trying to learn this stuff... been awhile since I've really used C/C++ for anything.  I'm sure there are plenty of errors here.  Feel free to raise [an issue!](https://github.com/zipzit/vscode_cpp_projects/issues)
 
 ## Tools
 
@@ -41,4 +41,20 @@ VS Code Enabled Extensions:
  - Use LLDB for debugging
  
 ## 3_cmake_simple_include
- - Introduce a simple class structure with seperate header file
+ - Introduce a simple class structure with separate header file
+ 
+## 4_cmake_template_class
+ - No compilation lessons here...
+ - I wanted to understand how template functions worked
+ 
+## 5_cmake_vcpkg
+ - Lots going on here.. and I'm sure errors abound... 
+ - We're using vcpkg, a package manager for C++ libraries.  Its an impressive setup.
+ - This simple sample uses `fmt`just so we can easily test the process of using a vcpkg library.
+ - The vcpkg tools is creating the content well, but there are problems in the Cmake link / include processing.  This was way too much stubby pencil work.  
+ - Again, this is a work in progress.
+ 
+## 6_cmake_opencv_intro
+ - OpenCV installed manually from github source
+ - Works well.  
+
