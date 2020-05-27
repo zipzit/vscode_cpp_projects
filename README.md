@@ -32,4 +32,13 @@ VS Code Enabled Extensions:
 
 ## 1_cpp_helloworld
  - Keep it simple. 
- - Simple gcc compilation, 
+ - Simple gcc compilation, generated via C/C++ Extension tools
+ - Simple gdb debugging
+ 
+## 2_cmake_helloworld
+ - Same simple program
+ - Use Cmake via CMakeLists.txt
+ - Use LLDB for debugging
+ 
+## 3_cmake_simple_include
+ - Introduce a simple class structure with seperate header file
