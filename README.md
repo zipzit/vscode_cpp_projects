@@ -1,33 +1,7 @@
 # vscode_cpp_projects
 Run C++ Code on VS Code on Linux
 
-The goal here is to run C++ programs on a Linux box using Visual Studio Code, including the ability to debug / step through code.  These samples show a progression of making this work.    Please note, this is a work in progress... I'm trying to learn this stuff... been awhile since I've really used C/C++ for anything.  I'm sure there are plenty of errors here.  Feel free to raise [an issue!](https://github.com/zipzit/vscode_cpp_projects/issues)
-
-## Tools
-
-Laptop:
-
-     $ hostnamectl 
-     
-     Operating System: Ubuntu 20.04 LTS
-     
-     Kernel: Linux 5.4.0-31-generic
-     
-     Architecture: x86-64`
-     
-Visual Studio Code: 
-
-     Version: 1.45.1
-     
-VS Code Enabled Extensions:
-
-    C/C++ (Microsoft)
-    
-    Cmake (twxs)
-    
-    Cmake Tools (Microsoft)
-    
-    CodeLLDB (Vadim Chuganov)
+The goal here is to run C++ programs on a Linux box using Visual Studio Code, including the ability to debug / step through code.  These samples show a progression of making this work.    Please note, this is a work in progress... I'm trying to learn this stuff... been awhile since I've really used C/C++ for anything.  I'm sure there are plenty of errors (opportunities for improvement) here.  Feel free to raise [an issue!](https://github.com/zipzit/vscode_cpp_projects/issues)
 
 
 ## 1_cpp_helloworld
@@ -57,4 +31,54 @@ VS Code Enabled Extensions:
 ## 6_cmake_opencv_intro
  - OpenCV installed manually from github source
  - Works well.  
+ 
+ ## Tools
+
+Laptop:
+
+     $ hostnamectl 
+     
+     Operating System: Ubuntu 20.04 LTS
+     
+     Kernel: Linux 5.4.0-31-generic
+     
+     Architecture: x86-64`
+     
+Visual Studio Code: 
+
+     Version: 1.45.1
+     
+VS Code Enabled Extensions:
+
+    C/C++ (Microsoft)
+    
+    Cmake (twxs)
+    
+    Cmake Tools (Microsoft)
+    
+    CodeLLDB (Vadim Chuganov)
+
+c++
+
+     $ c++ -v
+     Using built-in specs.
+     COLLECT_GCC=c++
+     COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+     OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+     OFFLOAD_TARGET_DEFAULT=1
+     Target: x86_64-linux-gnu
+     Thread model: posix
+     gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2) 
+     
+     $ cpp -v
+     Using built-in specs.
+     COLLECT_GCC=cpp
+     OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+     OFFLOAD_TARGET_DEFAULT=1
+     Target: x86_64-linux-gnu
+     Thread model: posix
+     gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)
+
+
+
 
