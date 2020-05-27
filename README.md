@@ -29,7 +29,7 @@ The goal here is to run C++ programs on a Linux box using Visual Studio Code, in
  - Again, this is a work in progress.
  
 ## 6_cmake_opencv_intro
- - OpenCV installed manually from github source
+ - OpenCV compiled and installed manually from github source
  - Works well.  
  
  ## Tools
