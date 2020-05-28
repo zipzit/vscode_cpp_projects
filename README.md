@@ -22,11 +22,12 @@ The goal here is to run C++ programs on a Linux box using Visual Studio Code, in
  - I wanted to understand how template functions worked
  
 ## 5_cmake_vcpkg
- - Lots going on here.. and I'm sure errors abound... 
  - We're using vcpkg, a package manager for C++ libraries.  Its an impressive setup.
  - This simple sample uses `fmt`just so we can easily test the process of using a vcpkg library.
- - The vcpkg tools is creating the content well, but there are problems in the Cmake link / include processing.  This was way too much stubby pencil work.  
- - Again, this is a work in progress.
+ - The vcpkg tools is creating the content well.
+ - I initially had a difficult time with CmakeLists.txt content, but received some guidance online.  
+ - I will say I don't entirely understand the linker line of code `target_link_libraries(CmakeVcpkg PRIVATE fmt::fmt fmt::fmt-header-only)`   What's up with `fmt::fmt fmt::fmt-header-only` ?  Never seen that before.  Is that an idiosyncrasy of the fmt library?
+ - Many thanks to [Syys96 for assistance on this one... ](https://github.com/microsoft/vcpkg/issues/11354#issuecomment-633248199)
  
 ## 6_cmake_opencv_intro
  - OpenCV compiled and installed manually from github source
