@@ -17,10 +17,9 @@
 
      `    CMake projects should use: "-DCMAKE_TOOLCHAIN_FILE=/home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake"`
      
- - That last little bit you should create one more entry for the CMakeLists.txt file:  
+ - With that last little bit you should create one more entry for the CMakeLists.txt file:  
  
-      `     set(CMAKE_TOOLCHAIN_FILE /home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake)`
-      
+      `     set(CMAKE_TOOLCHAIN_FILE /home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake)` 
       
   And when you are done, your **CMakeLists.txt** file should look like: 
 
