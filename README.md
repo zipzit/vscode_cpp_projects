@@ -24,7 +24,7 @@ The goal here is to run C++ programs on a Linux box using Visual Studio Code, in
 ## 5_cmake_vcpkg
  - We're using vcpkg, a package manager for C++ libraries.  Its an impressive setup.
  - This simple sample uses **fmt** just so we can easily test the process of using a vcpkg library.  I will say, **fmt** is not a library I'd typically use;  it seemed short and concise enough to learn how to use **vcpkg**.
- - See 5_cmake_vcpkg folder for more details. 
+ - See [5_cmake_vcpkg folder](https://github.com/zipzit/vscode_cpp_projects/tree/master/5_cmake_vcpkg) for more details. 
 
 ## 6_cmake_opencv_intro
  - OpenCV compiled and installed manually from github source
