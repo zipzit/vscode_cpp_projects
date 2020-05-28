@@ -8,7 +8,7 @@
 // $    cd build
 // $    cmake ../CMakeLists.txt "-DCMAKE_TOOLCHAIN_FILE=/home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake"
 
-#define FMT_HEADER_ONLY
+// #define FMT_HEADER_ONLY
 #include <fmt/format.h>
 
 int main()
