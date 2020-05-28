@@ -24,16 +24,11 @@
       
   And when you are done, your **CMakeLists.txt** file should look like: 
 
-     cmake_minimum_required(VERSION 3.12)
-     
-     set(CMAKE_TOOLCHAIN_FILE /home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake)
-     
-     project(test_cpp)
-     
-     find_package(fmt CONFIG REQUIRED)
-     
-     add_executable(test_cpp main.cpp)
-     
+     cmake_minimum_required(VERSION 3.12)     
+     set(CMAKE_TOOLCHAIN_FILE /home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake)     
+     project(test_cpp)     
+     find_package(fmt CONFIG REQUIRED)     
+     add_executable(test_cpp main.cpp)     
      target_link_libraries(test_cpp PRIVATE fmt::fmt fmt::fmt-header-only)
 
  
