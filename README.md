@@ -87,5 +87,5 @@ c++ info
      Thread model: posix
      gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2) 
 
-
+Thoughts:  What about running [C++ in the command line on Windows?](https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=msvc-160) 
 
