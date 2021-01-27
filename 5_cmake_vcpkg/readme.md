@@ -25,6 +25,8 @@
  
       `     set(CMAKE_TOOLCHAIN_FILE /home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake)` 
       
+      Notice the differences here.  Specifically, remove the `-D` and `=` when creating that `set()` function
+      
   And when you are done, your **CMakeLists.txt** file should look like: 
 
      cmake_minimum_required(VERSION 3.12)     
