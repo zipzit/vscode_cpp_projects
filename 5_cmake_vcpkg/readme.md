@@ -27,6 +27,9 @@
       
       Notice the differences here.  Specifically, remove the `-D` and `=` when creating that `set()` function
       
+ - I had slight differences in this part of the project, based on what OS / Virtualbox/ Unix flavor I was working in.  
+ Reminder, stick to the basics, particularly with [CMake.](https://github.com/microsoft/vscode-cmake-tools/blob/master/docs/how-to.md#how-to)  Remember the command palette stuff: `CMake: Quick Start` , `CMake: Configure`, `CMake: Build` (or the Build Button in the status bar), `CMake: Debug Target` (or Debug button in the status bar)...
+      
   And when you are done, your **CMakeLists.txt** file should look like: 
 
      cmake_minimum_required(VERSION 3.12)     
