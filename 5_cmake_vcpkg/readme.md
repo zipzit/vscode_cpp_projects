@@ -1,4 +1,5 @@
 ## More info on using `vcpkg`
+ - [vcpkg: a C++ package manager for Windows, Linux, and macOS](https://docs.microsoft.com/en-us/cpp/build/vcpkg)
  - I initially had a difficult time with CmakeLists.txt content, but received some guidance online.  
  - I will say I don't entirely understand the linker line of code `target_link_libraries(CmakeVcpkg PRIVATE fmt::fmt fmt::fmt-header-only)`   What's up with `fmt::fmt fmt::fmt-header-only` ?  Never seen that before.  Is that an idiosyncrasy of the **fmt** library? is there a reference describing that format?
  - Many thanks to [Syys96 for assistance on this one... ](https://github.com/microsoft/vcpkg/issues/11354#issuecomment-633248199)
