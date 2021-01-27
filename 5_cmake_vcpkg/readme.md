@@ -35,5 +35,7 @@
      find_package(fmt CONFIG REQUIRED)     
      add_executable(test_cpp main.cpp)     
      target_link_libraries(test_cpp PRIVATE fmt::fmt fmt::fmt-header-only)
+     
+  Note, occasionally I had issues with CMake that didn't make sense. [Clear cache by just deleting the build folder.](https://github.com/microsoft/vcpkg/issues/11247#issuecomment-625688923)  Fixed it!
 
  
