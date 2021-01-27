@@ -27,8 +27,10 @@
       
       Notice the differences here.  Specifically, remove the `-D` and `=` when creating that `set()` function
       
- - I had slight differences in this part of the project, based on what OS / Virtualbox/ Unix flavor I was working in.  
+ - I've run this project multiple times, often with small errors, based on what OS / Virtualbox/ Unix flavor I was working in.  
  Reminder, stick to the basics, particularly with [CMake.](https://github.com/microsoft/vscode-cmake-tools/blob/master/docs/how-to.md#how-to)  Remember the command palette stuff: `CMake: Quick Start` , `CMake: Configure`, `CMake: Build` (or the Build Button in the status bar), `CMake: Debug Target` (or Debug button in the status bar)...
+ 
+ - Note, occasionally I had issues with CMake that didn't make sense. [Clear cache by just deleting the build folder.](https://github.com/microsoft/vcpkg/issues/11247#issuecomment-625688923)  Fixed it!
       
   And when you are done, your **CMakeLists.txt** file should look like: 
 
@@ -39,6 +41,6 @@
      add_executable(test_cpp main.cpp)     
      target_link_libraries(test_cpp PRIVATE fmt::fmt fmt::fmt-header-only)
      
-  Note, occasionally I had issues with CMake that didn't make sense. [Clear cache by just deleting the build folder.](https://github.com/microsoft/vcpkg/issues/11247#issuecomment-625688923)  Fixed it!
+
 
  
