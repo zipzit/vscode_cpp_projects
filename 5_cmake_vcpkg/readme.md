@@ -1,6 +1,8 @@
 ## More info on using `vcpkg`
  - We're going to be using [vcpkg: a C++ package manager for Windows, Linux, and macOS](https://docs.microsoft.com/en-us/cpp/build/vcpkg).  This simplifies the acquisition and installation of third-party libraries on Windows, Linux, and macOS. 
  - Install vcpkg by making a local clone from its [GitHub repo](https://github.com/Microsoft/vcpkg). Then run the vcpkg-bootstrapper script to set it up.
+ - In the vcpkg directory, `$  ./vcpkg search` to see what packages are available.  
+ - `$ ./vcpgk install fmt` to install the fmt library.  
  - I initially had a difficult time with CmakeLists.txt content, but received some guidance online.  
  - I will say I don't entirely understand the linker line of code `target_link_libraries(CmakeVcpkg PRIVATE fmt::fmt fmt::fmt-header-only)`   What's up with `fmt::fmt fmt::fmt-header-only` ?  Never seen that before.  Is that an idiosyncrasy of the **fmt** library? is there a reference describing that format?
  - Many thanks to [Syys96 for assistance on this one... ](https://github.com/microsoft/vcpkg/issues/11354#issuecomment-633248199)
