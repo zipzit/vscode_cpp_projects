@@ -2,11 +2,11 @@
 # https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html
 
 cmake_minimum_required(VERSION 3.12) 
-set(CMAKE_TOOLCHAIN_FILE /home/lbc/vcpkg/scripts/buildsystems/vcpkg.cmake)
+set(CMAKE_TOOLCHAIN_FILE /home/vagrant/Desktop/vcpkg/scripts/buildsystems/vcpkg.cmake)
 project(CmakeVcpkg VERSION 0.1.0)
 find_package(fmt CONFIG REQUIRED)
 add_executable(CmakeVcpkg main.cpp)
-target_link_libraries(CmakeVcpkg PRIVATE fmt::fmt fmt::fmt-header-only)
+target_link_libraries(CmakeVcpkg PRIVATE fmt::fmt)
 
 # DISPLAY ALL VARIABLES  S.O.9298278
 get_cmake_property(_variableNames VARIABLES)

@@ -1,4 +1,6 @@
 // https://pspdfkit.com/blog/2019/visual-studio-code-for-cpp/
+// https://code.visualstudio.com/docs/cpp/cmake-linux
+//     Remember `Command Palette, CMake: Select a Kit`
 
 // uses CodeLLB Extension for "type": "lldb"
 
