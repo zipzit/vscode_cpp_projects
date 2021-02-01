@@ -1,0 +1,13 @@
+// https://pspdfkit.com/blog/2019/visual-studio-code-for-cpp/
+// uses CodeLLB Extension for "type": "lldb"
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "lldb",
+        "request": "launch",
+        "name": "Debug CMake Target",
+        "program": "${command:cmake.launchTargetPath}"
+      }
+    ]
+  }

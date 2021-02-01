@@ -1,0 +1,8 @@
+  
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "${vcpkgRoot}/scripts/buildsystems/vcpkg.cmake"
+    },
+    "cmake.configureOnOpen": true
+}
