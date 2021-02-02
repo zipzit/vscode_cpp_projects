@@ -3,7 +3,7 @@
 # https://code.visualstudio.com/docs/cpp/cmake-linux
 # Generate CMakeLists using the VScode CMake Extension, then modify it 
 # per instructions from VCPKG = Fail every time.  
-# Not sure why.  
+# Not sure why.  I don't understand where the lines of CMake code from the VCPKG Go.  Does order matter?
 
 cmake_minimum_required(VERSION 3.0.0)
 project(RayLib_Test VERSION 0.1.0)
@@ -13,14 +13,15 @@ set(CMAKE_TOOLCHAIN_FILE /home/vagrant/Desktop/vcpkg/scripts/buildsystems/vcpkg.
 include(CTest)
 enable_testing()
 
-add_executable(RayLib_Test main.cpp)
-
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 
+add_executable(RayLib_Test main.cpp)
+
 find_package(raylib CONFIG REQUIRED)           
 target_include_directories(RayLib_Test PRIVATE ${RAYLIB_INCLUDE_DIRS})
+
 target_link_libraries(RayLib_Test PRIVATE ${RAYLIB_LIBRARIES})
 
 # DISPLAY ALL VARIABLES  S.O.9298278
