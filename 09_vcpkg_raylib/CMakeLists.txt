@@ -1,6 +1,9 @@
 # https://github.com/microsoft/vcpkg/issues/11354#issuecomment-633248199
 # https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html 
 # https://code.visualstudio.com/docs/cpp/cmake-linux
+# Generate CMakeLists using the VScode CMake Extension, then modify it 
+# per instructions from VCPKG = Fail every time.  
+# Not sure why.  
 
 cmake_minimum_required(VERSION 3.0.0)
 project(RayLib_Test VERSION 0.1.0)
