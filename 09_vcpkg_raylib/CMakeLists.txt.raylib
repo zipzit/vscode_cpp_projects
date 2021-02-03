@@ -1,0 +1,18 @@
+## https://www.reddit.com/r/raylib/comments/ecz6ja/problem_getting_started_with_project_cmake_file/
+## Use this file for manually installed raylib tooling. 
+## https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux
+## When building raylib from github repo, after compilation the build places the libraries and headers
+## in /usr/local/include and /usr/local/lib     Note: This locations are NOT in the PATH env variable.
+
+cmake_minimum_required(VERSION 3.0.0)
+project(raylib_test3 VERSION 0.1.0)   ## Name the project here!
+
+include(CTest)
+enable_testing()
+
+INCLUDE_DIRECTORIES(/usr/local/include)              
+LINK_DIRECTORIES(/usr/local/lib)
+
+add_executable(${PROJECT_NAME} main3.cpp)
+
+target_link_libraries(${PROJECT_NAME} raylib)

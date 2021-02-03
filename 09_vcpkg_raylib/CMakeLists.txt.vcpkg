@@ -1,0 +1,36 @@
+# https://github.com/microsoft/vcpkg/issues/11354#issuecomment-633248199
+# https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html 
+# https://code.visualstudio.com/docs/cpp/cmake-linux
+# Generate CMakeLists using the VScode CMake Extension, then modify it 
+# per instructions from VCPKG = Fail every time.  
+# Not sure why.  I don't understand where the lines of CMake code from the VCPKG Go.  Does order matter?
+
+cmake_minimum_required(VERSION 3.0.0)
+project(rltest2 VERSION 0.1.0)
+
+set(CMAKE_TOOLCHAIN_FILE /home/vagrant/Desktop/vcpkg/scripts/buildsystems/vcpkg.cmake)
+
+find_package(raylib CONFIG REQUIRED)           
+target_include_directories(RayLib_Test PRIVATE ${RAYLIB_INCLUDE_DIRS})
+
+add_executable(${PROJECT_NAME} main2.cpp)
+
+target_link_libraries(${PROJECT_NAME}  PRIVATE ${RAYLIB_LIBRARIES})
+
+## You may get a glimpse of where stuff may be stored via:
+## $  sudo find / -iname raylib.h
+
+## These next few lines drive me crazy.  This is what VCPKG tells you:
+## $ ./vcpkg install raylib
+
+## The package raylib:x64-linux provides CMake targets:
+##
+##    find_package(raylib CONFIG REQUIRED)
+##    target_include_directories(main PRIVATE ${RAYLIB_INCLUDE_DIRS})
+##    target_link_libraries(main PRIVATE ${RAYLIB_LIBRARIES})
+
+## $ ./vcpkg integrate install
+
+## Applied user-wide integration for this vcpkg root.
+## CMake projects should use: "-DCMAKE_TOOLCHAIN_FILE=/home/vagrant/Desktop/vcpkg/scripts/buildsystems/vcpkg.cmake"
+
