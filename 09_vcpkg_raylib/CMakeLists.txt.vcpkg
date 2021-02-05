@@ -5,13 +5,13 @@
 # per instructions from VCPKG = Fail every time.  
 # Not sure why.  I don't understand where the lines of CMake code from the VCPKG Go.  Does order matter?
 
-cmake_minimum_required(VERSION 3.0.0)
-project(rltest2 VERSION 0.1.0)
-
 set(CMAKE_TOOLCHAIN_FILE /home/vagrant/Desktop/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
+cmake_minimum_required(VERSION 3.0.0)
+project(RayLib_Test VERSION 0.1.0)
+
 find_package(raylib CONFIG REQUIRED)           
-target_include_directories(RayLib_Test PRIVATE ${RAYLIB_INCLUDE_DIRS})
+target_include_directories(${PROJECT_NAME} PRIVATE ${RAYLIB_INCLUDE_DIRS})
 
 add_executable(${PROJECT_NAME} main2.cpp)
 
