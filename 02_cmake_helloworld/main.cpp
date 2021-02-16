@@ -5,6 +5,30 @@
 
 #include <iostream>
 
+void fun(int& x) { x = 20; }
+
 int main(int, char**) {
     std::cout << "\nHello, world!\n\n\n";
+
+    // review pointers and references... 
+    // https://www.geeksforgeeks.org/pointers-vs-references-cpp/
+    int i = 3;
+    int *ptr =&i;
+    int &ref = i;
+    std::cout << i <<" simple int value \n" 
+    << &i << " address of int value \n" 
+    << ptr <<" value of pointer \n" 
+    << *ptr << " content stored at location pointer \n\n\n";
+
+
+    // when do we pass arguments by reference or pointer?
+    // ans. 1) to modify local variables of the caller function 
+    //      2) For passing large sized arguments (recommended practice
+    //         is ot make reference arguments const in this case))
+    // ref: https://www.geeksforgeeks.org/when-do-we-pass-arguments-by-reference-or-pointer/
+
+    int x = 10;
+    fun(x);
+    std::cout << "New value of x is " << x << "\n\n";
+    return 0;
 }
