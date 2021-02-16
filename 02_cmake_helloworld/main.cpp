@@ -13,13 +13,28 @@ int main(int, char**) {
     // review pointers and references... 
     // https://www.geeksforgeeks.org/pointers-vs-references-cpp/
     int i = 3;
-    int *ptr =&i;
-    int &ref = i;
+    int *ptr =&i;   // pointer to variable i, stores the address of i
+    int &ref = i;   // a reference (or alias) for i, same storage location
+    int ref2 = i;   // a copy of i, same value now, different storage location
+
     std::cout << i <<" simple int value \n" 
     << &i << " address of int value \n" 
     << ptr <<" value of pointer \n" 
-    << *ptr << " content stored at location pointer \n\n\n";
+    << *ptr << " content stored at location pointer is addressing \n"
+    << ref << " reference to int value\n" 
+    << &ref << " reference to reference? \n"
+    << ref2 << " copy of int value\n"
+    << &ref2 << " address of copied value\n\n\n";
 
+    ref++;
+    std::cout << i << " value i\n"
+    << ref << " value ref\n"
+    << ref2 << " value ref2\n\n\n";
+
+    ref2++;
+    std::cout << i << "  value i\n"
+    << ref << " value ref\n"
+    << ref2 << " value ref2\n\n\n";
 
     // when do we pass arguments by reference or pointer?
     // ans. 1) to modify local variables of the caller function 
